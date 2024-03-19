@@ -1,0 +1,15 @@
+<!--pages/route/route.wxml-->
+<!-- module1 展图 -->
+<view class="DC_module1">
+  <image src="../../images/picture/医院展图.jpg"></image>
+</view>
+<!-- module2 title -->
+<view class="DC_module2">
+<text>智能医疗为您服务</text>
+</view><view class="black1"></view>
+<!-- module3 -->
+<view class="module3">
+  <text>我们智能医疗医院基于先进的信息技术和人工智能算法的医疗机构。通过整合电子病历、远程医疗、智能医疗设备等现代化医疗技术，实现了医疗资源的高效利用和医疗服务的个性化定制。\n同时，智能医疗医院还采用人工智能算法进行数据分析和挖掘，为医生提供更准确的诊断和治疗方案，为患者提供更加便捷的就医体验和更优质的医疗服务。\n智能医疗医院的出现，不仅提高了医疗质量和效率，还为人们带来了更加便利的医疗服务，是医疗行业数字化转型和创新发展的重要一步。</text>
+</view>
+
+

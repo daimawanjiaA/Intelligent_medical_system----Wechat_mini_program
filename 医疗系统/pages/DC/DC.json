@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-picker": "@vant/weapp/picker/index"
+  },
+  "navigationBarTitleText": "远程预约"
+}

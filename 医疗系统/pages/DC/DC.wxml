@@ -1,0 +1,102 @@
+<!--pages/DC/DC.wxml-->
+<!-- module1 展图 -->
+<view class="DC_module1">
+  <image src="../../images/picture/医院展图.jpg"></image>
+</view>
+<!-- module2 预约挂号 -->
+<view class="DC_module2">
+<image src="../../images/icon/医生.png"></image>
+<text>预约挂号</text>
+</view>
+<!-- module3 温馨提示 -->
+<view class="DC_module3">
+  <text>温馨提示:\n我院是郑州XX医院，由市卫计委批准通过社会公益组织创办的国内首家综合性医院。\n郑州XX医院率先加入互连网+预约就诊模式，开通网络咨询预约平台，您可以在就诊之前进行在线咨询和预约。</text>
+</view>
+<!-- module4 表单 -->
+<view class="DC_module4">
+  <van-cell-group>
+  <van-field
+    name="userName"
+    label="患者姓名"
+    value="{{ userName }}"
+    placeholder="请输入用户名"
+    border="{{ true }}"
+    bind:blur="onChange1"
+  />
+  <van-field
+    value="{{ userId }}"
+    readonly="true"
+    center
+    clearable
+    label="患者编号"
+    placeholder="请选择患者号"
+    border="{{ false }}"
+    use-button-slot
+  >
+  <van-button slot="button" size="small" type="primary" bind:click="onClick_pno">
+      +
+    </van-button>
+  </van-field>
+  <van-action-sheet
+  show="{{ show_pno }}"
+  actions="{{ actions_pno }}"
+  bind:close="onClose_pno"
+  bind:select="onSelect_pno"
+/>
+<!-- 预约诊室 -->
+  <van-field
+    value="{{ officName }}"
+    readonly="true"
+    center
+    clearable
+    label="预约诊室"
+    placeholder="请选择预约诊室"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary" bind:click="onClick_offic">
+      +
+    </van-button>
+  </van-field>
+  <van-action-sheet
+  show="{{ show_offic }}"
+  actions="{{ actions_offic }}"
+  bind:close="onClose_offic"
+  bind:select="onSelect_offic"
+/>
+  
+<!-- 预约医生 -->
+<van-field
+    value="{{ doctorName }}"
+    readonly="true"
+    center
+    clearable
+    label="预约医生"
+    placeholder="请选择预约医生"
+    border="{{ false }}"
+    use-button-slot
+  >
+    <van-button slot="button" size="small" type="primary" bind:click="onClick_doctor">
+      +
+    </van-button>
+  </van-field>
+  <van-action-sheet
+  show="{{ show_doctor }}"
+  actions="{{ actions_doctor }}"
+  bind:close="onClose_doctor"
+  bind:select="onSelect_doctor"
+/>
+
+<!-- 选择日期 -->
+
+<van-cell-group>
+<van-cell title="选择单个日期" value="{{ reg_date }}" bind:click="onClick_date" />
+</van-cell-group>
+<van-calendar show="{{ show_date }}" bind:close="onClose" bind:confirm="onConfirm" />
+
+<!-- 提交 -->
+<van-button type="primary" block bind:click="onClick_submit">提交</van-button>
+
+</van-cell-group>
+</view>
+<van-toast id="van-toast" />

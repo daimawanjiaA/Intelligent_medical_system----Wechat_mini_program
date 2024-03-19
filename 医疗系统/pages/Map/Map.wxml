@@ -1,0 +1,9 @@
+<!--pages/Map/Map.wxml-->
+<view class="row-bottom">
+		<map id="map" :longitude="longitude" :latitude="latitude" scale="{{scale}}" :circles="circles" markers="{{markers}}" :polyline="polyline" show-location style="width: 100%; height: 800rpx;"></map>
+</view>
+<view class="m2">
+  <van-button class="loc" type="primary" bindtap="moveTolocation" block>我的位置</van-button>
+  <van-button class="route" type="primary" block>查看路线-></van-button>
+
+</view>

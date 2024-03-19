@@ -1,0 +1,51 @@
+<!-- 
+  小程序的事件：
+    事件分类：冒泡事件 和 非冒泡事件
+      冒泡事件：bind+事件名=‘函数名’
+      非冒泡事件：catch+事件名=‘函数名’
+    常见事件名：
+      tap         点击事件  <组件 bindtap='demo'></组件>
+      touchstart  触摸开始    bindtouchstart
+      ...
+      
+ -->
+
+ <view bindtap='demo'>点击事件-点击试试</view>
+
+ <!-- 事件冒泡 -->
+ <view bindtap="parent">父元素
+   <!-- <button bindtap="child">子元素按钮</button> -->
+   <button catchtap="child">子元素按钮</button>
+ </view>
+
+
+ <!-- 
+  事件传递参数：
+    不能直接传递参数  通过事件对象获取组件参数
+    1.组件上绑定事件名 和 要传递的参数 参数data-属性='传递的值/变量名'
+    2.事件里面接收事件对象  event获取event.currentTarget.dataset
+  -->
+  <view bindtap='change' data-mark='123' data-id='666'>点击我进入详情</view>
+
+  <!-- data属性='传递的参数内容' 
+      data-userName='huahua'    js获取的是：username  转小写字母
+      data-user-id='123'        js获取的是：userId
+  -->
+  <view bindtap="canshu" data-userName="花花" data-user-id='123' data-pn='{{num}}'>
+    点击事件-传递参数data
+  </view>
+<!-- 列表渲染数组：添加点击事件 点击事件的时候获取当前元素的下标 -->
+<view wx:for="{{arr}}" wx:key="index" bindtap='dian'  data-id='{{index}}' >
+  {{item}}
+</view>
+
+<!-- 
+  获取data数据和修改data数据
+    功能：点击按钮  切换下面的一个容器显示隐藏状态
+ -->
+ <button bindtap="toggle" type="success" data-mark='{{isShow}}'>切换显示隐藏</button>
+ <view class="box" wx:if="{{isShow}}">
+   显示隐藏容器{{aa}}
+ </view>
+
+

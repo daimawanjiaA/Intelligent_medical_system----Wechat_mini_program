@@ -1,0 +1,17 @@
+
+  <!-- template里面才是真正模板内容  接收的数据是：item-->
+<!-- <template name="list">
+  <view class="list">
+     <text>书名：{{item.bookName}}</text>
+     <text>简介：{{item.desc}}</text>
+  </view>
+</template> -->
+
+<!--  接收的数据是：...item 展开 直接获取属性名-->
+ 
+<template name="list">
+  <view class="list">
+     <text>书名：{{bookName}}</text>
+     <text>简介：{{desc}}</text>
+  </view>
+</template>

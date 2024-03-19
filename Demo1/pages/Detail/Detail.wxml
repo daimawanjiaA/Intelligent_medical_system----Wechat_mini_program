@@ -1,0 +1,4 @@
+<!--pages/Detail/Detail.wxml-->
+<text>pages/Detail/Detail.wxml</text>
+
+<navigator url="../DC/DC" open-type="navigateBack">返回</navigator>

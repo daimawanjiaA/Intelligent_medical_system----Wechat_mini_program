@@ -1,0 +1,31 @@
+.module1 {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  text-align: center;
+  background-color: #dfffaa;
+  font-weight: 600;
+  font-size: larger;
+}
+.module2 {
+  padding-top: 100rpx;
+  padding-bottom: 100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.module2 .row {
+  padding-left: 80rpx;
+  display: flex;
+  padding-bottom: 30rpx;
+}
+.module2 .row text {
+  font-size: larger;
+}
+.module2 .row input {
+  font-size: larger;
+  border: 3rpx solid #f8f8f8;
+  /*  阴影 */
+  box-shadow: 0 0 5rpx #cacaca;
+}
+.module3 {
+  display: flex;
+}

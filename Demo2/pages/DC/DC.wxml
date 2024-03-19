@@ -1,0 +1,52 @@
+<!--pages/DC/DC.wxml-->
+
+<view>=======从当前页面跳转详情页-普通跳转=====</view>
+<navigator url="../Detail/Detail">跳转到首页的indexDetail</navigator>
+
+<view>=======tabbar跳转=====</view>
+<navigator url="../index/index" open-type="switchTab">跳转到index
+</navigator>
+<navigator  open-type="exit" target="miniProgram">退出</navigator>
+
+
+<!-- 1.基础组件 -->
+<text>pages/DC/DC.wxml</text>
+ <text>我是文本容器</text>
+ <view>
+   我是块容器
+ </view>
+ 
+ <!-- 2.进度条。组件属性的长度单位默认为px -->
+ <view class="pro">
+    <progress percent="20"></progress>
+    <progress percent="20" show-info="true"></progress>
+    <progress percent="80" show-info="true" active="true" activeColor="pink"></progress>
+    <progress percent="20" show-info="true"
+    border-radius="6"></progress>
+    进度条
+ </view>
+
+ <!--3. icon组件 组件属性的长度单位默认为px，2.4.0起支持传入单位（rpx/px）-->
+<icon type="success" size="40" color="red"/>
+<icon type="waiting" size="40"/>
+<icon type="cancel" size="40"/>
+<icon type="download" size="40"/>
+<icon type="success" size="40" color="#999"/>
+icon组件
+
+<!-- 4.button 默认大小  按钮功能强大 -->
+<button>按钮</button>
+<button type="primary" loading="true">按钮</button>
+<button type="warn" >按钮</button>
+<button size="mini" open-type="contact">按钮-会话</button>
+<button open-type="share">按钮-转发</button>
+
+<!-- 5.表单属性：checkbox  -->
+<checkbox value=""/>吃
+<checkbox value=""/>喝
+
+<input type="text"/>
+
+<!-- 6.地图 -->
+<map longitude="116.404" latitude="39.915"></map>
+

@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<!-- module1 标题-->
+<view class="module1">
+  <text>欢迎使用智能医疗系统</text>
+</view>
+<!-- module2 表单 -->
+<view class="module2">
+<view class="row">
+   <text>患者号：</text>
+   <input type="text" name="pno" model:value="{{pno}}"  placeholder="请输入用户名" bindinput="T"/>
+</view>
+<view class="row">
+   <text decode="{{true}}" space="{{true}}">密码：&nbsp;&nbsp;&nbsp; </text>
+   <input type="text" password="true" model:value="{{pwd}}" name="pwd" placeholder="请输入密码" bindinput="T"/>
+</view>
+</view>
+
+<view class="module3">
+  <button bindtap="login" >
+    <view>登录</view>
+  </button> 
+<button bindtap="register" >
+    <view>注册</view>
+</button> 
+</view>
+

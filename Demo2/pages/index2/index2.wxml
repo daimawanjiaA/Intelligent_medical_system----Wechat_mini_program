@@ -1,0 +1,28 @@
+<!--pages/index2/index2.wxml-->
+<text>pages/index2/index2.wxml</text>
+
+<navigator url="../DC/DC">跳转新闻</navigator>
+
+<!-- 引入模板 -->
+<import src="../../templates/list/list.wxml"/>
+<!-- 使用模板 -->
+<!-- <block wx:for="{{books}}">
+  <template is="list" data="{{item}}"/>
+</block> -->
+
+<!-- 展开对象 
+      item={id:'',bookName:''}  获取书名:item.bookName
+      ...item=id:'',bookName:'' 获取书名:bookName
+-->
+<block wx:for="{{books}}">
+  <template is="list" data="{{...item}}"></template>
+</block>
+    
+
+
+<!-- 
+<template is="list" ></template>
+<template is="list" ></template>
+<template is="list" ></template>
+<template is="list" ></template>
+<template is="list" ></template> -->

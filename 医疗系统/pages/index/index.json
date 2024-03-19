@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "SearchBar": "/components/SearchBar/SearchBar"
+  },
+  "navigationBarTitleText": "智疗首页"
+}

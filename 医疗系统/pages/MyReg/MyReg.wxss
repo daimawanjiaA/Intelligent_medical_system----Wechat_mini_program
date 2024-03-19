@@ -1,0 +1,115 @@
+.module1 {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #8ad4ff;
+  font-weight: 500;
+  font-size: larger;
+  text-align: center;
+}
+.water {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.module3 {
+  padding-top: 20rpx;
+  /* padding-left: 10rpx;
+  padding-right: 10rpx; */
+  background-color: hsl(118, 77%, 92%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+}
+.module3 .title {
+  font-weight: 500;
+  font-size: larger;
+  text-align: center;
+  padding-bottom: 10rpx;
+}
+.module3 .row1 {
+  padding-left: 30rpx;
+  display: flex;
+}
+.module3 .row1 .Q {
+  font-weight: 500;
+  font-size: larger;
+}
+.module3 .row1 .T {
+  padding-right: 30rpx;
+  color: #6b6b6b;
+  font-size: larger;
+}
+.module3 .row2 {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  display: flex;
+}
+.module3 .row2 .Q1 {
+  position: relative;
+  left: auto;
+  font-weight: 500;
+  font-size: larger;
+}
+.module3 .row2 .Q2 {
+  position: absolute;
+  right: 230rpx;
+  font-weight: 500;
+  font-size: larger;
+}
+.module3 .row2 .T1 {
+  position: absolute;
+  left: 200rpx;
+  color: #6b6b6b;
+  font-size: larger;
+}
+.module3 .row2 .T2 {
+  position: absolute;
+  left: 540rpx;
+  color: #6b6b6b;
+  font-size: larger;
+}
+.module3 .row3 {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  display: flex;
+}
+.module3 .row3 .Q1 {
+  position: relative;
+  left: auto;
+  font-weight: 500;
+  font-size: larger;
+}
+.module3 .row3 .T1 {
+  position: absolute;
+  left: 200rpx;
+  color: #6b6b6b;
+  font-size: larger;
+}
+.module3 .row4 {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.module3 .row4 text {
+  position: relative;
+  left: auto;
+  font-weight: 500;
+  font-size: larger;
+  padding-bottom: 20rpx;
+}
+.module3 .row5 {
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  display: flex;
+}
+.module3 .row5 .row5_t {
+  position: absolute;
+  left: 170rpx;
+  color: #6b6b6b;
+  font-size: larger;
+}
+.module4 {
+  height: 100rpx;
+  background-color: #ffffff;
+}

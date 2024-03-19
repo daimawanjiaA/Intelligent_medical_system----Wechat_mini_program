@@ -1,0 +1,61 @@
+
+<!--pages/emr/emr.wxml-->
+<van-notice-bar left-icon="volume-o" text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。" />
+<!--  测试flex -->
+<!--  模块1-->
+<view class="module1">
+  <text>我的病历</text>
+</view>
+<view class="water">
+</view>
+<!-- 模块2 -->
+<view wx:for="{{emr}}" wx:for-item="row" wx:for-index="id" wx:key="mrno" >
+<view class="module2">
+  <!--  -->
+  <view class="title">
+    病历{{id+1}}
+  </view>
+  <!--  -->
+  <view class="row1">
+    <text class="Q">病历号:</text>
+    <text class="T">{{row.mrno}}</text>
+    <text class="Q">患者号:</text>
+    <text class="T">{{row.pno}}</text>
+    <text class="Q">医生号:</text>
+    <text class="T">{{row.doctor.dno}}</text>
+  </view>
+  <!--  -->
+  <view class="row2">
+    <text class="Q1">患者姓名:</text>
+    <text class="T1">{{row.patient.pname}}</text>
+    <text class="Q2">医生姓名:</text>
+    <text class="T2">{{row.doctor.dname}}</text>
+  </view>
+  <!--  -->
+  <view class="row3">
+    <text class="Q1">疾病:</text>
+    <text class="T1">{{row.disease}}</text>
+    <text class="Q2">治疗结果:</text>
+    <text class="T2">{{row.result}}</text>
+  </view>
+  <!-- -->
+  <view class="row4">
+    <view class="title">治疗过程:</view>
+    <view class="content">
+      <text decode="{{true}}">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{row.treatment}}</text>
+    </view>
+  </view>
+  <view class="row5">
+    <text class="Q1">创建时间:</text>
+    <text class="T1">{{row.createDate}}</text>
+  </view>
+  <view class="row6">
+    <text class="Q1">更新时间:</text>
+    <text class="T1">{{row.updateDate}}</text>
+  </view>
+</view>
+<!-- 模块2 -->
+<view class="module3">
+</view>
+</view>

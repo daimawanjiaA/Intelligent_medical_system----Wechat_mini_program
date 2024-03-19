@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+<!-- module1 标题-->
+<view class="module1">
+  <text>注册</text>
+</view>
+<!-- module2 表单 -->
+<view class="module2">
+<view class="row">
+   <text>患者号：</text>
+   <input type="text" name="pno" model:value="{{pno}}"  placeholder="请输入用户名" bindinput="T"/>
+</view>
+<view class="row">
+   <text decode="{{true}}" space="{{true}}">密码：&nbsp;&nbsp;&nbsp; </text>
+   <input type="text" password="true" model:value="{{pwd}}" name="pwd" placeholder="请输入密码" bindinput="T"/>
+</view>
+<view class="row">
+  <text decode="{{true}}" space="{{true}}">姓名：&nbsp;&nbsp;&nbsp; </text>
+   <input type="text" name="pname" model:value="{{pname}}"  placeholder="请输入姓名" bindinput="T"/>
+</view>
+<view class="row">
+  <text decode="{{true}}" space="{{true}}">电话：&nbsp;&nbsp;&nbsp; </text>
+   <input type="text" name="pphone" model:value="{{pphone}}"  placeholder="请输入电话" bindinput="T"/>
+</view>
+</view>
+
+<button bindtap="register" >
+    <view>注册</view>
+</button> 
+

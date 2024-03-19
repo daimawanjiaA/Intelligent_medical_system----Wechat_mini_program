@@ -1,0 +1,81 @@
+<!--
+  index.wxml
+  定义的标签：
+    html页面：div + ul + li + a + img + span
+    小程序组建：view + text
+  -->
+<!-- 1.视图容器 -->
+<view>
+  <!-- 搜索框开始 -->
+  <SearchBar></SearchBar>
+  <!-- 搜索框结束 -->
+</view>
+<!-- 2.swiper轮播图  轮播组件 滑块视图容器。其中只可防止swiper-item组件 -->
+<view class="index_swiper">
+  <swiper indicator-dots="true" indicator-color="#999" indicator-active-color="black" autoplay="true" interval="3000" circular="true">
+    <swiper-item wx:for="{{swiperList}}" wx:for-item="swiper" wx:key="id">
+      <navigator>
+        <image mode="widthFix" src="{{'http://127.0.0.1:80/image/swiper/'+swiper.image}}">
+        </image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 轮播图结束 -->
+<!-- 板块1  -->
+<view class="index_tip">
+  <!-- <view class="tip"> -->
+  <view wx:for="{{bigTypeList_row0}}" wx:for-item="bigType" wx:key="id">
+    <view class="ttip">
+      <button plain="true" style="border-style: none;" bindtap="Go" data-index="{{bigType.id}}">
+        <image mode="widthFix" src="{{'../../images/icon1/'+bigType.name+'.png'}}">
+        </image>
+      </button>
+      <text>{{bigType.name}}</text>
+    </view>
+  </view>
+  <!-- </view> -->
+</view>
+<!-- 板块2 科室-->
+<view class="index_bigType">
+  <view class="bigTypeRow">
+  <view  wx:for="{{bigTypeList_row1}}" wx:for-item="bigType" wx:key="id"> 
+    <navigator url="../DC/DC" open-type='switchTab' >
+      <image mode="widthFix" src="{{'../../images/icon2/'+bigType.name}}"></image>
+    </navigator>
+  </view>
+  </view>
+  <!-- 六大科室 -->
+  <view class="bigTypeRow">
+  <view wx:for="{{bigTypeList_row2}}" wx:for-item="bigType" wx:key="id">
+    <navigator url="../DC/DC" open-type='switchTab' >
+      <image mode="widthFix" src="{{'../../images/icon2/'+bigType.name}}"></image>
+    </navigator>
+  </view>
+  </view>
+</view>
+<!-- 板块3  -->
+<view class="index_link1">
+  <text>专家团队</text>
+  <navigator>
+    <text>查看更多</text>
+  </navigator>
+</view>
+<!-- 板块4 专家团队 -->
+<view class="index_doctor">
+<view class="doctor">
+    <navigator wx:for="{{doctor}}" wx:for-item="bigType" wx:key="id">
+      <view>
+      <image mode="widthFix" src="{{'../../images/doctor/'+bigType.name+'.png'}}"></image>
+      <text>{{bigType.name}}</text>
+      <text style="color: #7c7c7c;">{{bigType.post}}</text>
+    </view>
+    </navigator>
+  </view>
+</view>
+<!-- 3.scroll-view 滑块 导航 水平移动 
+      实现水平滚动 1.必须加宽度 2.不能换行 3.里面滑动的内容必须是行内块元素
+      垂直滚动：同上  度
+  -->
+<!--index.wxml-->
+

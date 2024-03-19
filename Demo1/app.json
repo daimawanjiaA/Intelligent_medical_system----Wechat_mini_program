@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/PI/PI",
+    "pages/DC/DC",
+    "pages/call_center/CC",
+    "pages/Detail/Detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00B26A",
+    "navigationBarTitleText": "智疗",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f2f2f2",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home_page.png",
+        "selectedIconPath": "images/icon/home_page2.png"
+      },
+      {
+        "pagePath": "pages/DC/DC",
+        "text": "问诊",
+        "iconPath": "images/icon/doctor.png",
+        "selectedIconPath": "images/icon/doctor2.png"
+      },
+      {
+        "pagePath": "pages/PI/PI",
+        "text": "我的",
+        "iconPath": "images/icon/PI.png",
+        "selectedIconPath": "images/icon/PI2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+/**app.wxss**/
+/* 导入外部的样式表 */
+/* @import 'common/base.wxss'; */
+/* 全局引入iconfont样式 */
+@import "./style/iconfont.wxss";
+/* 全局样式 */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 全局变量定义 设置主题颜色，字体大小等 */
+page{
+  /* 主题颜色 */
+  --themeColor:#020202;
+  --backColor:#00B26A;
+  /* 字体大小 rpx自适应大小 */
+  font-size: 32rpx;
+}

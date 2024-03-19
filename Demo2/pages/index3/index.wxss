@@ -1,0 +1,65 @@
+/**index.wxss**/
+/* 导入样式 在顶部 或者底部 都可以 */
+ /* @import '../../common/base.wxss'; */
+
+.swiper{
+  background-color: aqua;
+}
+
+.naBar{
+  white-space: nowrap;
+  overflow:hidden;
+}
+.naBar text{
+  display: inline-block;
+  margin:10rpx 20rpx;
+}
+.ii{
+  width: 100%;
+  text-align: center;
+}
+.img{
+  width: 500rpx;
+  height: 300rpx;
+}
+/* 轮播图 */
+.swiper{
+  height: 400rpx;
+}
+.swiper image{
+  width: 100%;
+  height: 400rpx;
+}
+view{
+  line-height: 50rpx;
+}
+.bg{
+  color: blueviolet;
+}
+.box{
+  width: 400rpx;
+  height: 400rpx;
+  background:pink;
+  margin-top: 30rpx;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */

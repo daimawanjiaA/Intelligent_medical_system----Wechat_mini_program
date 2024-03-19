@@ -1,0 +1,22 @@
+<!--pages/route/route.wxml-->
+<!-- module1 展图 -->
+<view class="DC_module1">
+  <image src="../../images/picture/医院展图.jpg"></image>
+</view>
+<!-- module2 title -->
+<view class="DC_module2">
+<text>智能医疗为您服务</text>
+</view><view class="black1"></view>
+<!-- module3 -->
+<view class="module3">
+  <text>地址：河南省郑州市郑州大学柳园社区\n</text>
+  <text>邮编：450052\n</text>
+  <text>电话：(020)475831123\n</text>
+  <text>郑州大学东门：地铁一号线A、B、C、D口\n</text>
+</view>
+<view class="black1"></view>
+<!--    地图组件  -->
+<view class="module4">
+  <van-button type="primary" block bind:click="GoMap" data-index="2">查看地图</van-button>
+</view>
+

@@ -1,0 +1,151 @@
+<!--
+  index.wxml
+  定义的标签：
+    html页面：div + ul + li + a + img + span
+    小程序组建：view + text
+  -->
+
+  <view>获取逻辑数据---渲染数据===数据驱动视图===</view>
+  <!-- 1.{{变量}}双括号语法  获取逻辑层的data里面的变量 -->
+  <view>{{msg}}</view>
+  <view>{{str}}</view>
+  <view>{{arr}}</view>
+  <view>{{obj.uname}}</view>
+  <!--  {{}}语法可以在属性值上面获取data里面的变量  -->
+  <view class="{{aa}}" >{{msg}} {aa}</view>
+  <view id="item1"> 11 </view>
+  <view id="item2"> 22 </view>
+  <view id="item{{num}}"> 33 </view>
+<!--  特殊用法：组件多选按钮 -->
+  <checkbox value="" checked="true"/>火锅
+  <checkbox value="" checked="{{false}}"/>羊肉
+  <checkbox value="" checked="true"/>烤串
+<!-- 2. 列表渲染 
+    语法：wx:for='{{数组名字}}'
+      index 下标  item  数组的每一项
+-->
+  <!-- <view wx:for="{{arr}}">
+    {{item}}
+  </view>
+  [{},{},{}]     item={}
+  <view wx:for="{{books}}">
+    {{item.bookName}} {{item.desc}}
+  </view>
+  注意:默认  每一项是item  下表index
+      修改每一项换个下标变量：
+        wx:for-item=''  wx:for-index=''
+  
+  <view wx:for="{{books}}" wx:for-item='obj' wx:for-index='i'>
+    {{i}} {{obj.bookName}} 
+  </view>
+
+  <view wx:for="{{books}}" >
+    <view>书名：{{item.bookName}}</view>
+    <view>简介：{{item.desc}}</view>
+  </view>
+
+block 是包裹容器  ： 包裹起来，不会渲染 block
+  <block wx:for="{{books}}" >
+    <view>书名：{{item.bookName}}</view>
+    <view>简介：{{item.desc}}</view>
+  </block>
+
+
+  <view wx:for="[1,2,3,4,5]">
+    <view wx:for="[1,2,3,4,5]">
+      嵌套for循环，就需要修改 项 和 下标
+    </view>
+  </view> -->
+
+<!-- 
+  语法：条件渲染  控制元素的显示隐藏
+    wx：if='{{变量}}' true 显示 false隐藏
+    wx：if=''
+    wx:else 成对控制元素显示隐藏
+ -->
+ <view wx:if='{{flag}}'>wx:if成对显示</view>
+
+<!-- wx:if 是否显示 vs hidden是否隐藏     隐藏true    显示false
+    区别：wx：if控制元素是否显示  显示true  隐藏false   隐藏的时候元素删除了
+          hidden控制元素是否隐藏  隐藏true  显示fale    不管显示还是隐藏，元素都在 
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 1.视图容器 -->
+  <view class="box">块容器view组件</view>
+  <view>块容器view组件</view>
+
+  <!-- 2.swiper轮播图  轮播组件 滑块视图容器。其中只可防止swiper-item组件 -->
+  <swiper class="swiper" indicator-dots="true" indicator-color="#999"
+    indicator-active-color="blue" autoplay="true" interval="3000"
+    circular="true" >
+    <swiper-item>
+      <image src="../../images/picture/OIP-C2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/picture/OIP-C3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/picture/OIP-C4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/picture/OIP-C5.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 3.scroll-view 滑块 导航 水平移动 
+      实现水平滚动 1.必须加宽度 2.不能换行 3.里面滑动的内容必须是行内块元素
+      垂直滚动：同上  度
+  -->
+  <view class="view">
+    <scroll-view class="naBar" scroll-x="true">
+      <text>首页1</text>
+      <text>首页2</text>
+      <text>首页3</text>
+      <text>首页4</text>
+      <text>首页5</text>
+      <text>首页6</text>
+      <text>首页7</text>
+      <text>首页8</text>
+      <text>首页9</text>
+    </scroll-view>
+  </view>
+<!-- 4.图片 image 注意：所有图片都默认有大小 会导致图片变形-->
+  
+
+<!-- <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

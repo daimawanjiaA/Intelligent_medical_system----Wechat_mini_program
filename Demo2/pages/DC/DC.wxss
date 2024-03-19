@@ -1,0 +1,4 @@
+/* pages/DC/DC.wxss */
+.pro{
+  margin: 20rpx;
+}

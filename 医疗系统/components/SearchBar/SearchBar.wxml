@@ -1,0 +1,9 @@
+<!--components/SearchBar/SearchBar.wxml-->
+<!-- <text>components/SearchBar/SearchBar.wxml</text> -->
+
+<view class="search_bar">
+  <navigator url="/pages/Doctor_info/Doctor_info" open-type="navigate">
+    <icon type="search" size="16"></icon>搜索
+  </navigator>
+</view>
+<!-- <van-search value="{{ value }}" shape="round" background="var(--backColor)" placeholder="请输入搜索关键词" /> -->

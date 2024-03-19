@@ -1,0 +1,47 @@
+.DC_module1 {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-bottom: 20rpx;
+  height: 400rpx;
+  background-color: #fcfcfc;
+}
+.DC_module1 image {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+.DC_module2 {
+  display: flex;
+  background-color: #f8f8f8;
+  border: 3rpx solid #f8f8f8;
+  /*  阴影 */
+  box-shadow: 0 0 5rpx #cacaca;
+}
+.DC_module2 text {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-left: 20rpx;
+  font-size: larger;
+  font-weight: 500;
+}
+.black1 {
+  padding-top: 20rpx;
+  background-color: #ffffff;
+}
+.module3 {
+  background-color: #f8f8f8;
+  border: 3rpx solid #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+.module3 text {
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  font-size: larger;
+  font-weight: 500;
+}
+.module4 {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
